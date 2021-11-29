@@ -1,0 +1,6 @@
+NaN in TransformMoveDelay: 2021-11-29 오전 8:58:41, Server.Mobiles.AnimalAI, Server.Mobiles.TimberWolf, 71
+NaN in TransformMoveDelay: 2021-11-29 오전 8:58:41, Server.Mobiles.AnimalAI, Server.Mobiles.BlackBear, 65
+NaN in TransformMoveDelay: 2021-11-29 오전 8:58:41, Server.Mobiles.AnimalAI, Server.Mobiles.TimberWolf, 71
+NaN in TransformMoveDelay: 2021-11-29 오전 8:58:41, Server.Mobiles.AnimalAI, Server.Mobiles.BlackBear, 65
+NaN in TransformMoveDelay: 2021-11-29 오전 8:58:41, Server.Mobiles.AnimalAI, Server.Mobiles.BlackBear, 75
+NaN in TransformMoveDelay: 2021-11-29 오전 8:58:41, Server.Mobiles.AnimalAI, Server.Mobiles.BlackBear, 75
