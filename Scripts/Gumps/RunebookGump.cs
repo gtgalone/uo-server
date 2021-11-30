@@ -229,11 +229,18 @@ namespace Server.Gumps
                     }
                     else
                     {
-                        AddButton(135 + (half * 160), 140, 2103, 2104, 50 + index, GumpButtonType.Reply, 0);
-                        AddHtmlLocalized(150 + (half * 160), 136, 110, 20, 1062722, false, false); // Recall
+                        // GTGalone
+                        AddButton(135 + (half * 160), 143, 2271, 2271, 50 + index, GumpButtonType.Reply, 0);
+                        AddHtmlLocalized(135 + (half * 160), 128, 110, 20, 1062722, false, false); // Recall
 
-                        AddButton(135 + (half * 160), 158, 2103, 2104, 100 + index, GumpButtonType.Reply, 0);
-                        AddHtmlLocalized(150 + (half * 160), 154, 110, 20, 1062723, false, false); // Gate Travel
+                        AddButton(195 + (half * 160), 143, 2291, 2291, 100 + index, GumpButtonType.Reply, 0);
+                        AddHtmlLocalized(195 + (half * 160), 128, 110, 20, 1062723, false, false); // Gate Travel
+                        
+                        // AddButton(135 + (half * 160), 140, 2103, 2104, 50 + index, GumpButtonType.Reply, 0);
+                        // AddHtmlLocalized(150 + (half * 160), 136, 110, 20, 1062722, false, false); // Recall
+
+                        // AddButton(135 + (half * 160), 158, 2103, 2104, 100 + index, GumpButtonType.Reply, 0);
+                        // AddHtmlLocalized(150 + (half * 160), 154, 110, 20, 1062723, false, false); // Gate Travel
                     }
                 }
             }

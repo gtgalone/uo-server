@@ -3,8 +3,54 @@
 	<category title="Customs">
 		<category title="Items">
 			<object type="Server.Items.PublicMoongate" gfx="1" />
+			<object type="Server.Mobiles.XmlSpawner" gfx="7964" />
 		</category>
-		<category title="Mobiles"></category>
+		<category title="Mobiles">
+			<category title="Mounts">
+				<category title="War Horses">
+					<object type="Server.Mobiles.CoMWarHorse" gfx="9630" />
+					<object type="Server.Mobiles.MinaxWarHorse" gfx="9630" />
+					<object type="Server.Mobiles.SLWarHorse" gfx="9630" />
+					<object type="Server.Mobiles.TBWarHorse" gfx="9630" />
+				</category>
+				<object type="Server.Mobiles.Beetle" gfx="9743" />
+				<object type="Server.Mobiles.CuSidhe" gfx="11670" hue="2426" />
+				<object type="Server.Mobiles.DesertOstard" gfx="9650" />
+				<object type="Server.Factions.FactionWarHorse" gfx="9625" />
+				<object type="Server.Mobiles.FireBeetle" gfx="10268" hue="1161" />
+				<object type="Server.Mobiles.FireSteed" gfx="8689" hue="1161" />
+				<object type="Server.Mobiles.ForestOstard" gfx="9652" hue="2215" />
+				<object type="Server.Mobiles.FrenziedOstard" gfx="9651" hue="1139" />
+				<object type="Server.Mobiles.GrizzledMare" gfx="9751" />
+				<object type="Server.Mobiles.HellSteed" gfx="9751" />
+				<object type="Server.Mobiles.Hiryu" gfx="10090" />
+				<object type="Server.Mobiles.HolySteed" gfx="9629" />
+				<object type="Server.Mobiles.Horse" gfx="9630" />
+				<object type="Server.Mobiles.Kirin" gfx="9632" />
+				<object type="Server.Mobiles.Lasher" gfx="40501" />
+				<object type="Server.Mobiles.LesserHiryu" gfx="10090" />
+				<object type="Server.Mobiles.Nightmare" gfx="9628" />
+				<object type="Server.Mobiles.Palomino" gfx="16077" />
+				<object type="Server.Mobiles.ParoxysmusSwampDragon" gfx="9753" hue="2129" />
+				<object type="Server.Mobiles.RedDeath" gfx="9751" hue="33" />
+				<object type="Server.Mobiles.Rend" gfx="11669" hue="1109" />
+				<object type="Server.Mobiles.Reptalon" gfx="11669" />
+				<object type="Server.Mobiles.RidableLlama" gfx="8438" />
+				<object type="Server.Mobiles.Ridgeback" gfx="9749" />
+				<object type="Server.Mobiles.SavageRidgeback" gfx="9749" />
+				<object type="Server.Mobiles.ScaledSwampDragon" gfx="9753" />
+				<object type="Server.Mobiles.SeaHorse" gfx="9658" />
+				<object type="Server.Mobiles.SilverSteed" gfx="9629" />
+				<object type="Server.Mobiles.SkeletalMount" gfx="9751" />
+				<object type="Server.Mobiles.SwampDragon" gfx="9753" hue="2129" />
+				<object type="Server.Mobiles.UnholySteed" gfx="9628" />
+				<object type="Server.Mobiles.Unicorn" gfx="9678" />
+				<object type="Server.Mobiles.WildBlackTiger" gfx="38980" hue="1175" />
+				<object type="Server.Mobiles.WildTiger" gfx="38980" />
+				<object type="Server.Mobiles.WildWhiteTiger" gfx="38980" hue="2500" />
+				<object type="Server.Mobiles.Windrunner" gfx="40661" />
+			</category>
+		</category>
 	</category>
 	<category title="Items">
 		<category title="Addons">

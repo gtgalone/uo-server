@@ -25,9 +25,7 @@ namespace Server.Misc
 		/// <summary>
 		///     How long do we remember targets/locations?
 		/// </summary>
-		// GTGalone
-		public static TimeSpan AntiMacroExpire = TimeSpan.FromSeconds(0.1);
-		// public static TimeSpan AntiMacroExpire = TimeSpan.FromMinutes(5.0);
+		public static TimeSpan AntiMacroExpire = TimeSpan.FromMinutes(5.0);
 
 		/// <summary>
 		///     How many times may we use the same location/target for gain
@@ -473,7 +471,9 @@ namespace Server.Misc
 				// Old gain mechanic
 				if (!Core.ML)
 				{
-					var scalar = 1.0;
+					// GTGalone
+					var scalar = 20.0;
+					// var scalar = 1.0;
 
 					if (from.StrLock == StatLockType.Up && (info.StrGain / 33.3) * scalar > Utility.RandomDouble())
 						GainStat(from, Stat.Str);

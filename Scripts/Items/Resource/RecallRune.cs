@@ -312,7 +312,7 @@ namespace Server.Items
 
                     if ((desc = m_Description) == null || (desc = desc.Trim()).Length == 0)
                         desc = "an unknown location";
-
+                    
                     if (m_TargetMap == Map.Tokuno)
                         list.Add((House != null ? 1063260 : 1063259), RuneFormat, desc); // ~1_val~ (Tokuno Islands)[(House)]
                     else if (m_TargetMap == Map.Malas)
@@ -404,7 +404,9 @@ namespace Server.Items
                 if (map == Map.Trammel)
                     hue = (house != null ? 0x47F : 50);
                 else if (map == Map.Felucca)
-                    hue = (house != null ? 0x66D : 0);
+                    // GTGalone
+                    hue = (house != null ? 0x66D : 58);
+                    // hue = (house != null ? 0x66D : 0);
                 else if (map == Map.Ilshenar)
                     hue = (house != null ? 0x55F : 1102);
                 else if (map == Map.Malas)
@@ -432,6 +434,9 @@ namespace Server.Items
             {
                 if (m_Rune.House == null && m_Rune.Marked)
                 {
+                    // GTGalone
+                    m_Rune.Name = string.Format(RuneFormat, text);
+                    
                     m_Rune.Description = text;
                     from.SendLocalizedMessage(1010474); // The etching on the rune has been changed.
                 }
