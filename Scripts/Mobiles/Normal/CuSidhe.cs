@@ -43,9 +43,11 @@ namespace Server.Mobiles
 
             // SetDamage(21, 28);
 
-            SetDamageType(ResistanceType.Physical, 0);
-            SetDamageType(ResistanceType.Cold, 50);
-            SetDamageType(ResistanceType.Energy, 50);
+            SetDamageType(ResistanceType.Physical, 100);
+            SetDamageType(ResistanceType.Fire, 100);
+            SetDamageType(ResistanceType.Cold, 100);
+            SetDamageType(ResistanceType.Poison, 100);
+            SetDamageType(ResistanceType.Energy, 100);
 
             SetResistance(ResistanceType.Physical, 90, 90);
             SetResistance(ResistanceType.Fire, 90, 90);
@@ -80,8 +82,9 @@ namespace Server.Mobiles
 
             Tamable = true;
             
-            ControlSlots = 4;
-            MinTameSkill = 101.1;
+            ControlSlots = 1;
+            MinTameSkill = 99.9;
+            // MinTameSkill = 101.1;
 
             PackGold(500, 800);
 

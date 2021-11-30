@@ -334,11 +334,12 @@ namespace Server.Items
                     return;
                 }
 
-                if (DateTime.UtcNow < NextUse)
-                {
-                    from.SendLocalizedMessage(502406); // This book needs time to recharge.
-                    return;
-                }
+                // GTGalone
+                // if (DateTime.UtcNow < NextUse)
+                // {
+                //     from.SendLocalizedMessage(502406); // This book needs time to recharge.
+                //     return;
+                // }
 
                 from.CloseGump(typeof(RunebookGump));
                 from.SendGump(new RunebookGump(from, this));
