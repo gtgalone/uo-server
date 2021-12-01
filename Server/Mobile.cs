@@ -5595,7 +5595,8 @@ namespace Server
 				}
 				else
 				{
-                    FatigueHandler(this, amount, DFA);
+					// GTGalone
+                    // FatigueHandler(this, amount, DFA);
 
 					Hits = newHits;
 				}

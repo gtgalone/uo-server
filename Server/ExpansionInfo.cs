@@ -172,13 +172,21 @@ namespace Server
 					FeatureFlags.ExpansionT2A,
 					CharacterListFlags.ExpansionT2A,
 					HousingFlags.None),
+				// GTGalone
 				new ExpansionInfo(
 					2,
 					"Renaissance",
-					ClientFlags.Trammel,
+					ClientFlags.Felucca,
 					FeatureFlags.ExpansionUOR,
 					CharacterListFlags.ExpansionUOR,
-					HousingFlags.None),
+					HousingFlags.HousingEJ),
+				// new ExpansionInfo(
+				// 	2,
+				// 	"Renaissance",
+				// 	ClientFlags.Trammel,
+				// 	FeatureFlags.ExpansionUOR,
+				// 	CharacterListFlags.ExpansionUOR,
+				// 	HousingFlags.None),
 				new ExpansionInfo(
 					3,
 					"Third Dawn",

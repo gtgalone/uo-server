@@ -1735,8 +1735,11 @@ namespace Server.Mobiles
 				}
 				else
 				{
-					m_Mobile.ControlTarget = null;
-					m_Mobile.ControlOrder = OrderType.None;
+					// GTGalone
+					m_Mobile.ControlTarget = m_Mobile.ControlMaster;
+					m_Mobile.ControlOrder = OrderType.Follow;
+					// m_Mobile.ControlTarget = null;
+					// m_Mobile.ControlOrder = OrderType.None;
 				}
 
 				if (m_Mobile.FightMode == FightMode.Closest || m_Mobile.FightMode == FightMode.Aggressor)
