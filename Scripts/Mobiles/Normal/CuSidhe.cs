@@ -1,6 +1,6 @@
 using System;
 using Server.Items;
-
+// GTGalone
 namespace Server.Mobiles
 {
     [CorpseName("a cu sidhe corpse")]
@@ -27,13 +27,11 @@ namespace Server.Mobiles
             else if (chance < 500)
                 Hue = Utility.RandomList(0x97A, 0x978, 0x901, 0x8AC, 0x5A7, 0x527);
 
-            SetStr(2200, 2225);
-            SetDex(350, 370);
-            SetInt(350, 385);
+            SetStr(625, 655);
+            SetDex(150, 170);
+            SetInt(250, 285);
 
-            SetHits(3010, 3275);
-
-            SetDamage(210, 280);
+            SetHits(375, 393);
 
             // SetStr(1200, 1225);
             // SetDex(150, 170);
@@ -41,7 +39,7 @@ namespace Server.Mobiles
 
             // SetHits(1010, 1275);
 
-            // SetDamage(21, 28);
+            SetDamage(21, 28);
 
             SetDamageType(ResistanceType.Physical, 100);
             SetDamageType(ResistanceType.Fire, 100);
@@ -82,14 +80,13 @@ namespace Server.Mobiles
 
             Tamable = true;
             
-            ControlSlots = 1;
+            ControlSlots = 2;
             MinTameSkill = 99.9;
             // MinTameSkill = 101.1;
 
             PackGold(500, 800);
 
             SetWeaponAbility(WeaponAbility.BleedAttack);
-            // GTGalone
             SetWeaponAbility(WeaponAbility.WhirlwindAttack);
         }
 

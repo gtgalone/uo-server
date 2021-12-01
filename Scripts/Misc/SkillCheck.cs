@@ -472,7 +472,7 @@ namespace Server.Misc
 				if (!Core.ML)
 				{
 					// GTGalone
-					var scalar = 20.0;
+					var scalar = 16.0;
 					// var scalar = 1.0;
 
 					if (from.StrLock == StatLockType.Up && (info.StrGain / 33.3) * scalar > Utility.RandomDouble())

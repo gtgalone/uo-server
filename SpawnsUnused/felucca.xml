@@ -39101,7 +39101,7 @@
     <IsHomeRangeRelative>True</IsHomeRangeRelative>
     <Objects2>ferret:MX=2:SB=0:RT=0:TO=0:KL=0:RK=0:CA=1:DN=-1:DX=-1:SP=1:PR=-1:OBJ=bird:MX=5:SB=0:RT=0:TO=0:KL=0:RK=0:CA=1:DN=-1:DX=-1:SP=1:PR=-1</Objects2>
   </Points>
-  <Points>
+  <!-- <Points>
     <Name>Greater dragon</Name>
     <UniqueId>6dbe657e-10c1-4948-86c8-a0dfc7b071d5</UniqueId>
     <Map>Felucca</Map>
@@ -39142,7 +39142,7 @@
     <IsRunning>True</IsRunning>
     <IsHomeRangeRelative>True</IsHomeRangeRelative>
     <Objects2>greaterdragon:MX=2:SB=0:RT=0:TO=0:KL=0:RK=0:CA=1:DN=-1:DX=-1:SP=1:PR=-1</Objects2>
-  </Points>
+  </Points> -->
   <Points>
     <Name>Hythloth#28</Name>
     <UniqueId>6dc54e02-440d-4c82-984a-765bcf8d03dc</UniqueId>
@@ -49895,7 +49895,7 @@
     <IsHomeRangeRelative>False</IsHomeRangeRelative>
     <Objects2>Lavasnake:MX=1:SB=0:RT=0:TO=0:KL=0:RK=0:CA=1:DN=-1:DX=-1:SP=1:PR=-1</Objects2>
   </Points>
-  <Points>
+  <!-- <Points>
     <Name>fel greater dragon</Name>
     <UniqueId>8a9fc0ef-c657-4052-a827-3780dfd3f374</UniqueId>
     <Map>Felucca</Map>
@@ -49936,7 +49936,7 @@
     <IsRunning>True</IsRunning>
     <IsHomeRangeRelative>True</IsHomeRangeRelative>
     <Objects2>greaterdragon:MX=1:SB=0:RT=0:TO=0:KL=0:RK=0:CA=1:DN=-1:DX=-1:SP=1:PR=-1</Objects2>
-  </Points>
+  </Points> -->
   <Points>
     <Name>Graveyards#6</Name>
     <UniqueId>8ac13226-659d-4431-874e-00d6998b54c1</UniqueId>
