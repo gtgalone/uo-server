@@ -177,7 +177,7 @@ namespace Server
 					2,
 					"Renaissance",
 					ClientFlags.Felucca,
-					FeatureFlags.ExpansionUOR,
+					FeatureFlags.ExpansionEJ,
 					CharacterListFlags.ExpansionUOR,
 					HousingFlags.HousingEJ),
 				// new ExpansionInfo(

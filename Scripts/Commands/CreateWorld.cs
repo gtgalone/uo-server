@@ -64,7 +64,9 @@ namespace Server.Commands
 			new CommandEntry("Doom Gauntlet",       "GenGauntlet",      "DeleteGauntlet",		Category.Dungeon,         Expansion.AOS,    106),
             new CommandEntry("Khaldun",             "GenKhaldun",       "DeleteKhaldun",        Category.Dungeon,         Expansion.None,   107),
             new CommandEntry("Stealables",          "GenStealArties",   "RemoveStealArties",	Category.Spawn,           Expansion.AOS,    108),
-			new CommandEntry("Solen Hives",         "SHTelGen",         "SHTelGenDelete",		Category.Dungeon,         Expansion.LBR,    109),
+			// GTGalone
+            new CommandEntry("Solen Hives",         "SHTelGen",         "SHTelGenDelete",		Category.Dungeon,         Expansion.UOR,    109),
+			// new CommandEntry("Solen Hives",         "SHTelGen",         "SHTelGenDelete",		Category.Dungeon,         Expansion.LBR,    109),
 			new CommandEntry("Malas Secrets",       "SecretLocGen",     "SecretLocDelete",		Category.System,          Expansion.AOS,    110),
 			new CommandEntry("Factions",            "GenerateFactions",	"DeleteFactions",		Category.System,          Expansion.None,   111),
 			new CommandEntry("Decorations",         "Decorate",         "DecorateDelete",		Category.Decoration,      Expansion.None,   113),
