@@ -27,16 +27,14 @@ namespace Server.Items
             if (!this.Validate(attacker) || !this.CheckMana(attacker, true))
                 return;
 
-            TimeSpan duration = TimeSpan.FromSeconds(30.0);
+            TimeSpan duration = TimeSpan.FromMinutes(3.0);
             Point3D loc = new Point3D(attacker);
             loc.X = loc.X + Utility.Random(3) - 1;
             loc.Y = loc.Y + Utility.Random(3) - 1;
 
-            BaseCreature bc_Attacker = ((BaseCreature)attacker);
+            BaseCreature bc_Attacker = attacker as BaseCreature;
+            BaseCreature c = Activator.CreateInstance(bc_Attacker.GetType()) as BaseCreature;
 
-            BaseCreature c = new BaseCreature(bc_Attacker);
-            // BaseCreature c = new ((BaseCreature)attacker)();
-            // c.ChangeAIType(AIType.AI_Mage);
             c.FightMode = FightMode.None;
 
             BaseCreature.Summon(c, true, attacker, loc, 0x28, duration);
