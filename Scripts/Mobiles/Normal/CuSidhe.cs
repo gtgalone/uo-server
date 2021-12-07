@@ -152,8 +152,8 @@ namespace Server.Mobiles
         public override void OnAfterTame(Mobile tamer)
         {
             // GTGalone
-            SetWeaponAbility(WeaponAbility.Undead);
-            
+            SetWeaponAbility(WeaponAbility.Mirror);
+
             if (Owners.Count == 0 && PetTrainingHelper.Enabled)
             {
                 if (RawStr > 0)
