@@ -1,5 +1,6 @@
 using System;
 using Server.Items;
+
 // GTGalone
 namespace Server.Mobiles
 {
@@ -7,6 +8,7 @@ namespace Server.Mobiles
     public class CuSidhe : BaseMount
     {
         public override double HealChance { get { return 1.0; } }
+        public override double WeaponAbilityChance { get { return 1.0; } }
 
         [Constructable]
         public CuSidhe()
@@ -149,6 +151,9 @@ namespace Server.Mobiles
 
         public override void OnAfterTame(Mobile tamer)
         {
+            // GTGalone
+            SetWeaponAbility(WeaponAbility.Undead);
+            
             if (Owners.Count == 0 && PetTrainingHelper.Enabled)
             {
                 if (RawStr > 0)

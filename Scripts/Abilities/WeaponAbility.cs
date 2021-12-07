@@ -292,7 +292,8 @@ namespace Server.Items
             return CheckSkills(from) && CheckMana(from, false);
         }
 
-        private static readonly WeaponAbility[] m_Abilities = new WeaponAbility[34]
+        // GTGalone
+        private static readonly WeaponAbility[] m_Abilities = new WeaponAbility[35]
         {
             null,
             new ArmorIgnore(),
@@ -328,6 +329,8 @@ namespace Server.Items
             new MysticArc(),
             new Disrobe(),
             new ColdWind()
+            
+            ,new Mirror()
         };
 
         public static WeaponAbility[] Abilities
@@ -385,6 +388,8 @@ namespace Server.Items
 
         public static readonly WeaponAbility Disrobe = m_Abilities[32];
         public static readonly WeaponAbility ColdWind = m_Abilities[33];
+        // GTGalone
+        public static readonly WeaponAbility Mirror = m_Abilities[34];
 
         public static bool IsWeaponAbility(Mobile m, WeaponAbility a)
         {
@@ -409,11 +414,12 @@ namespace Server.Items
 
         public static WeaponAbility GetCurrentAbility(Mobile m)
         {
-            if (!Core.AOS)
-            {
-                ClearCurrentAbility(m);
-                return null;
-            }
+            // GTGalone
+            // if (!Core.AOS)
+            // {
+            //     ClearCurrentAbility(m);
+            //     return null;
+            // }
 
             WeaponAbility a = (WeaponAbility)m_Table[m];
 
@@ -434,11 +440,12 @@ namespace Server.Items
 
         public static bool SetCurrentAbility(Mobile m, WeaponAbility a)
         {
-            if (!Core.AOS)
-            {
-                ClearCurrentAbility(m);
-                return false;
-            }
+            // GTGalone
+            // if (!Core.AOS)
+            // {
+            //     ClearCurrentAbility(m);
+            //     return false;
+            // }
 
             if (!IsWeaponAbility(m, a))
             {

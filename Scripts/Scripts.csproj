@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <!-- GTGalone -->
+    <Compile Include="Customs\Mirror.cs" />
+
     <Compile Include="Abilities\ColdWind.cs" />
     <Compile Include="Abilities\Focus.cs" />
     <Compile Include="Accounting\AccessRestrictions.cs">
