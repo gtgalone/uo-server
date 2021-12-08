@@ -776,7 +776,9 @@ namespace Server.Guilds
 		}
 		#endregion
 
-		public static bool NewGuildSystem { get { return Core.SE; } }
+		// GTGalone
+		public static bool NewGuildSystem { get { return true; } }
+		// public static bool NewGuildSystem { get { return Core.SE; } }
 
 		public static readonly int RegistrationFee = 25000;
 		public static readonly int AbbrevLimit = 4;

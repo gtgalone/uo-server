@@ -2,6 +2,8 @@ using System;
 using Server.Gumps;
 using Server.Mobiles;
 using Server.Targeting;
+// GTGalone
+using Server.Network;
 
 namespace Server.SkillHandlers
 {
@@ -121,6 +123,8 @@ namespace Server.SkillHandlers
 
     public class AnimalLoreGump : Gump
     {
+        // GTGalone
+        private readonly BaseCreature m_Pet;
         public static string FormatSkill(BaseCreature c, SkillName name)
         {
             Skill skill = c.Skills[name];
@@ -179,6 +183,8 @@ namespace Server.SkillHandlers
         public AnimalLoreGump(BaseCreature c)
             : base(250, 50)
         {
+            m_Pet = c;
+
             AddPage(0);
 
             AddImage(100, 100, 2080);
@@ -188,6 +194,10 @@ namespace Server.SkillHandlers
             AddImage(118, 347, 2083);
 
             AddHtml(147, 108, 210, 18, String.Format("<center><i>{0}</i></center>", c.Name), false, false);
+
+            // GTGalone
+            AddButton(300, 105, 4029, 4031, 1, GumpButtonType.Reply, 0);
+            AddHtmlLocalized(330, 108, 40, 16, 1114514, "Gems", 0, false, false);
 
             AddButton(240, 77, 2093, 2093, 2, GumpButtonType.Reply, 0);
 
@@ -423,6 +433,25 @@ namespace Server.SkillHandlers
             AddButton(340, 358, 5601, 5605, 0, GumpButtonType.Page, 1);
             AddButton(317, 358, 5603, 5607, 0, GumpButtonType.Page, page - 1);
             #endregion
+        }
+
+        // GTGalone
+        public override void OnResponse(NetState state, RelayInfo info)
+        {
+            Mobile from = state.Mobile;
+
+            switch ( info.ButtonID )
+            {
+                case 0: // Closed or Cancel
+                    {
+                        return;
+                    }
+                case 1:
+                    {
+                        from.SendGump(new GemGump(from, m_Pet));
+                        break;
+                    }
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ namespace Server.Mobiles
     {
         public override double HealChance { get { return 1.0; } }
         public override double WeaponAbilityChance { get { return 1.0; } }
+        public override bool IsDispellable { get { return false; } }
 
         [Constructable]
         public CuSidhe()
@@ -89,7 +90,7 @@ namespace Server.Mobiles
             PackGold(500, 800);
 
             SetWeaponAbility(WeaponAbility.BleedAttack);
-            SetWeaponAbility(WeaponAbility.WhirlwindAttack);
+            SetWeaponAbility(WeaponAbility.CrushingBlow);
         }
 
         public CuSidhe(Serial serial)
@@ -151,9 +152,6 @@ namespace Server.Mobiles
 
         public override void OnAfterTame(Mobile tamer)
         {
-            // GTGalone
-            SetWeaponAbility(WeaponAbility.Mirror);
-
             if (Owners.Count == 0 && PetTrainingHelper.Enabled)
             {
                 if (RawStr > 0)
