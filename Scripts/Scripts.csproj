@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <!-- GTGalone -->
-    <Compile Include="Customs\Mirror.cs" />
+    <Compile Include="Customs\Abilities\Mirror.cs" />
+    <Compile Include="Customs\Gumps\GemGump.cs" />
+    <Compile Include="Customs\Items\Gems\Gem.cs" />
+    <Compile Include="Customs\Items\Gems\Mirror.cs" />
 
     <Compile Include="Abilities\ColdWind.cs" />
     <Compile Include="Abilities\Focus.cs" />

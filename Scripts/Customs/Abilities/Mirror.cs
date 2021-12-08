@@ -4,11 +4,6 @@ using Server.Spells;
 
 namespace Server.Items
 {
-    /// <summary>
-    /// This special move allows the skilled warrior to bypass his target's physical resistance, for one shot only.
-    /// The Armor Ignore shot does slightly less damage than normal.
-    /// Against a heavily armored opponent, this ability is a big win, but when used against a very lightly armored foe, it might be better to use a standard strike!
-    /// </summary>
     public class Mirror : WeaponAbility
     {
         public Mirror()
@@ -32,18 +27,29 @@ namespace Server.Items
             loc.X = loc.X + Utility.Random(3) - 1;
             loc.Y = loc.Y + Utility.Random(3) - 1;
 
-            BaseCreature bc_Attacker = attacker as BaseCreature;
-            BaseCreature c = Activator.CreateInstance(bc_Attacker.GetType()) as BaseCreature;
+            BaseCreature cAttacker = attacker as BaseCreature;
+            BaseCreature c = (BaseCreature)Activator.CreateInstance(cAttacker.GetType());
+
+            c.Name = cAttacker.Name;
+            c.Hue = cAttacker.Hue;
+
+            c.SetStr(cAttacker.RawStr);
+            c.SetDex(cAttacker.RawDex);
+            c.SetInt(cAttacker.RawInt);
 
             c.FightMode = FightMode.None;
+            c.ControlSlots = 0;
 
             BaseCreature.Summon(c, true, attacker, loc, 0x28, duration);
-            
+
+            c.HitsMaxSeed = cAttacker.HitsMax;
+            c.Hits = c.HitsMaxSeed;
+
             c.ControlOrder = OrderType.Friend;
-            c.ControlTarget = bc_Attacker.ControlMaster;
+            c.ControlTarget = cAttacker.ControlMaster;
             
             c.ControlOrder = OrderType.Guard;
-            c.ControlTarget = bc_Attacker.ControlMaster;
+            c.ControlTarget = cAttacker.ControlMaster;
         }
     }
 }
