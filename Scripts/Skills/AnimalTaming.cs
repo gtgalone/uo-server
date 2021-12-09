@@ -448,10 +448,11 @@ namespace Server.SkillHandlers
 							}
 
 							m_Creature.SetControlMaster(m_Tamer);
+
+							m_Creature.IsBonded = false;
+							
 							// GTGalone
 							m_Creature.FightMode = FightMode.None;
-							m_Creature.IsBonded = true;
-							// m_Creature.IsBonded = false;
 
                             m_Creature.OnAfterTame(m_Tamer);
 
