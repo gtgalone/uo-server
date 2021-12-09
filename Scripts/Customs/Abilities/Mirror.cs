@@ -14,7 +14,7 @@ namespace Server.Items
         {
             get
             {
-                return 3;
+                return 0;
             }
         }
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
