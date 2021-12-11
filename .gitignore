@@ -40,4 +40,4 @@
 *.ini
 
 !/Data/*
-!/bin/rosyln/*
+!/bin/roslyn/*.exe
